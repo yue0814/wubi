@@ -4,3 +4,4 @@ wubi.egg-info
 .idea/
 .git
 *.DS_Store
+wubi/__pycache__/

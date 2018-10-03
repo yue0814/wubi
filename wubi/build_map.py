@@ -10,7 +10,7 @@ import random
 data = {}
 with open('./wubi.pickle') as f:
     data = pickle.load(f)
-print '原始映射表的中文映射五笔字典的总长度为{},五笔映射字典的总长度为{}'.format(len(data['cw']),len(data['wc']))
+print('原始映射表的中文映射五笔字典的总长度为{},五笔映射字典的总长度为{}'.format(len(data['cw']),len(data['wc'])))
 
 
 ###########if you want add custom relation please modify this part!
@@ -41,7 +41,7 @@ cw = {wc[k]:k for k in wc}
 
 data['cw']=cw
 data['wc']=wc
-print '程序执行后映射表的中文映射五笔字典的总长度为{},五笔映射字典的总长度为{}'.format(len(data['cw']),len(data['wc']))
+print('程序执行后映射表的中文映射五笔字典的总长度为{},五笔映射字典的总长度为{}'.format(len(data['cw']),len(data['wc'])))
 
 with open('./wubi.pickle','w') as f:
     pickle.dump(data,f)
